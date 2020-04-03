@@ -1,0 +1,38 @@
+como resolver o problema: listas de músicas para um play de streaming (um programa tocador de músicas). Cada lista tem um nome e uma quantidade de músicas que pode variar bastante, sendo que uma música pode estar em mais de uma lista. As listas são representadas pelos seguintes TADs (para cada Operação nos TADs, E: representa os dados de entrada e S: representa os dados de saída):
+
+TAD Musica{
+
+Dados: titulo, artista, album, ano
+
+Operações:
+
+    criamusica(E: titulo, artista, album, ano)
+
+}
+
+TAD ListaMusicas{
+
+Dados: lista de Musica, nome
+
+Operações:
+
+    insereMusica(E: Musica) - insere cada nova música no final da lista
+
+    removeMusica(E: titulo)
+
+    consultaPorTitulo(E: titulo; S: lista de Musica)
+
+    consultaPorArtista(E: artista; S: lista de Musica)  
+
+    consultaPorAlbum(E: album; S: lista de Musica)
+
+    organizarAleatorio(S: lista de Musica)
+
+    organizarAlfabeticoPorTitulo(S: lista de Musica)
+
+}
+______________________________________________________________________________
+
+Você conhecer a estrutura que permite definir a forma mais adequada de implementá-la, você optaria por implementar as listas de músicas utilizando vetores (memória estática) ou utilizando listas encadeadas (memória dinâmica)?
+
+como justificar e defender sua escolha da opoção como estrutura de implementação é a melhor?
